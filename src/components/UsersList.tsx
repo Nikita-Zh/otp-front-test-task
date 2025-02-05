@@ -9,11 +9,13 @@ const columns: TableColumnsType<User> = [
     title: "Name",
     dataIndex: "name",
     key: "name",
+    sorter: (a, b) => a.name.localeCompare(b.name),
   },
   {
     title: "Email",
     dataIndex: "email",
     key: "email",
+    sorter: (a, b) => a.name.localeCompare(b.name),
   },
 ];
 
